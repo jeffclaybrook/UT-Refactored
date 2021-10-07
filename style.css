@@ -193,13 +193,13 @@ header aside:last-of-type {
 
 header .avatar {
   align-items: center;
-  display: inline-flex;
+  display: flex;
   margin: 0 .5rem;
 }
 
 header .avatar img {
   border-radius: 50%;
-  display: inline-flex;
+  display: flex;
   height: 2.5rem;
   width: 2.5rem;
 }
@@ -340,7 +340,7 @@ nav.expanded+main {
 
 .card-details h3 {
   color: var(--black);
-  font-size: .875rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: calc(.8125rem + 6px);
   margin-bottom: .25rem;
@@ -355,7 +355,7 @@ nav.expanded+main {
 
 .card-details p {
   color: var(--black);
-  font-size: .8125rem;
+  font-size: .875rem;
   font-weight: 400;
 }
 
@@ -364,7 +364,11 @@ nav.expanded+main {
 }
 
 @media (max-width: 768px) {
-  nav.expanded+main {
+  header aside:first-of-type {
+    display: none;
+  }
+
+   nav.expanded+main {
      margin-left: 0;
      width: 100%;
   }
