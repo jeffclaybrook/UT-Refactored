@@ -1,0 +1,379 @@
+:root {
+  --black: #424242;
+  --highlight: #fec46f;
+  --primary: #c0511b;
+  --secondary: #517f70;
+  --white: #f1f3f4;
+  --white-alt: #f7f4f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img, video {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+h1 {
+  font-size: 1.802rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: .01rem;
+}
+
+h2 {
+  font-size: 1.602rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: .01rem;
+}
+
+h3 {
+  font-size: 1.424rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: .01rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: .01rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: .01rem;
+}
+
+h6 {
+  font-size: .675rem;
+  line-height: 1.8;
+  font-weight: 700;
+  letter-spacing: .01rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: .875rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+header {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  display: flex;
+  left: 0;
+  padding: .75rem 1.5rem .75rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header aside:first-of-type {
+  align-items: center;
+  background: var(--white);
+  border: none;
+  border-radius: .5rem;
+  display: flex;
+  flex-basis: 50%;
+  height: 3rem;
+  margin: 0 auto;
+  max-width: 50%;
+  outline: none;
+  position: relative;
+}
+
+header aside:first-of-type label {
+  display: none;
+}
+
+header aside:first-of-type button {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  fill: var(--black);
+  height: 2.25rem;
+  justify-content: center;
+  position: absolute;
+  right: .75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.25rem;
+}
+
+header aside:first-of-type button svg {
+  font-size: 1.25rem;
+}
+
+header aside:first-of-type button:hover {
+  background: #ccc;
+}
+
+header aside:first-of-type input {
+  background: var(--white);
+  border: none;
+  border-radius: .5rem;
+  font-size: 1rem;
+  outline: none;
+  padding: .75rem 1.25rem;
+  width: 100%;
+}
+
+header aside:last-of-type {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.icon-btn {
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--black);
+  display: inline-flex;
+  padding: .75rem;
+  transition: all .2s ease;
+}
+
+.icon-btn:hover {
+  background: var(--white);
+}
+
+.icon-btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+header .avatar {
+  align-items: center;
+  display: inline-flex;
+  margin: 0 .5rem;
+}
+
+header .avatar img {
+  border-radius: 50%;
+  display: inline-flex;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  left: -16rem;
+  background: #fff;
+  border-right: 1px solid rgba(0,0,0,.1);
+  transition: all .375s ease;
+  max-width: 16rem;
+  width: 100%;
+  top: 4.5rem;
+  z-index: 9;
+}
+
+nav article {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+nav article img {
+  display: flex;
+  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-bottom: .75rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: .04rem;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 0 1rem 0 .75rem;
+  position: relative;
+  min-height: 3rem;
+  border-left: .25rem solid transparent;
+  color: var(--black);
+}
+
+nav svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: .5rem;
+  margin-right: 1.5rem;
+  opacity: .8;
+  position: relative;
+}
+
+nav a:hover {
+  background: #f9f9f9;
+  color: var(--black);
+}
+
+nav a.active {
+  color: var(--primary);
+  background: #f9f9f9;
+  border-left: .25rem solid var(--primary);
+}
+
+nav.expanded {
+  left: 0;
+}
+
+main {
+  position: relative;
+  top: 4.5rem;
+  left: 0;
+  margin-left: 0;
+  padding: 1rem;
+  transition: all .375s ease;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+nav.expanded+main {
+  margin-left: 16rem;
+  transition: all .375s ease;
+  position: relative;
+  width: calc(100% - 16rem);
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero img {
+  border-radius: .25rem;
+  display: flex;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14.625rem, 1fr));
+  grid-column-gap: .75rem;
+  grid-row-gap: 1.25rem;
+  margin-top: .75rem;
+  transition: all .375s ease;
+}
+
+.card {
+  transition: .2s ease;
+  width: 100%;
+}
+
+.card:hover {
+  scale: 1.045;
+}
+
+.card-media img {
+  border-radius: .25rem;
+  display: flex;
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  align-items: flex-start;
+  margin-top: .75rem;
+}
+
+.card-body img {
+  border-radius: 50%;
+  margin-right: .625rem;
+  width: 2rem;
+}
+
+.card-details h3 {
+  color: var(--black);
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: calc(.8125rem + 6px);
+  margin-bottom: .25rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.card-details p {
+  color: var(--black);
+  font-size: .8125rem;
+  font-weight: 400;
+}
+
+.card-details p:nth-of-type(1) {
+  margin-bottom: .125rem;
+}
+
+@media (max-width: 768px) {
+  nav.expanded+main {
+     margin-left: 0;
+     width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  header aside:first-of-type {
+     flex-basis: 65%;
+     max-width: 65%;
+     width: 100%;
+  }
+}
