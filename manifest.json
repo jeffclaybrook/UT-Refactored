@@ -1,7 +1,7 @@
 {
     "name": "UT Healthier TV",
     "short_name": "UT Healthier TV",
-    "start_url": "/",
+    "start_url": "https://jeffclaybrook.github.io/UT-Refactored/",
     "background_color": "#fff",
     "display": "fullscreen",
     "scope": "/",
