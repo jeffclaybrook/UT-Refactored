@@ -1,0 +1,26 @@
+{
+    "name": "UT Healthier TV",
+    "short_name": "UT Healthier TV",
+    "start_url": "/",
+    "background_color": "#fff",
+    "display": "fullscreen",
+    "scope": "/",
+    "capture_links": "none",
+    "prefer_related_applications": false,
+    "theme_color": "#c0511b",
+    "description": "UT Healthier TV: A station created by you and for you.",
+    "icons": [
+        {
+            "src": "images/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ]
+}
