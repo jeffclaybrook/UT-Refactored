@@ -3,6 +3,11 @@ menuBtn.addEventListener("click", function() {
    document.querySelector("nav").classList.toggle("expanded");
 })
 
+let menuCloseBtn = document.getElementById("menu-close");
+menuCloseBtn.addEventListener("click", function() {
+   document.querySelector("nav").classList.toggle("expanded");
+})
+
 let header = document.querySelector("header");
 var scrollPrev = window.pageYOffset;
 window.onscroll = function () {

@@ -82,7 +82,7 @@ header {
   top: 0;
   transition: .375s ease;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .icon-btn {
@@ -134,7 +134,7 @@ nav {
   left: -16rem;
   overflow-y: scroll;
   position: fixed;
-  top: 4.5rem;
+  top: 0;
   transition: all .375s ease;
   width: 16rem;
   z-index: 100;
@@ -144,8 +144,14 @@ nav.expanded {
   left: 0;
 }
 
+nav aside {
+  display: flex;
+  justify-content: flex-end;
+  padding: .25rem;
+}
+
 .nav-header {
-  padding: 1.25rem;
+  padding: .5rem 1.25rem 1rem 1.25rem;
   text-align: center;
 }
 
@@ -155,6 +161,7 @@ nav.expanded {
   height: 6rem;
   margin: 0 auto;
   width: 6rem;
+  margin-bottom: .5rem;
 }
 
 .nav-header h4 {
@@ -162,6 +169,7 @@ nav.expanded {
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: .01em;
+  margin-bottom: .25rem;
 }
 
 .nav-header p {
