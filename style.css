@@ -144,6 +144,10 @@ nav.expanded {
   left: 0;
 }
 
+nav.expanded ~ main {
+  position: fixed;
+}
+
 nav aside {
   display: flex;
   justify-content: flex-end;
